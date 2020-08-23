@@ -1,5 +1,5 @@
 /* fonts */ 
-@font-face {
+ @font-face {
     font-family: 'bignoodletitlingregular';
     src: url('../fonts/big_noodle_titling-webfont.eot');
     src: url('../fonts/big_noodle_titling-webfont.eot?#iefix') format('embedded-opentype'),
@@ -20,6 +20,19 @@
          url('../fonts/big_noodle_titling_oblique-webfont.woff') format('woff'),
          url('../fonts/big_noodle_titling_oblique-webfont.ttf') format('truetype'),
          url('../fonts/big_noodle_titling_oblique-webfont.svg#bignoodletitlingoblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'mgopen_modataregular';
+    src: url('mgopenmodataregular-webfont.eot');
+    src: url('mgopenmodataregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('mgopenmodataregular-webfont.woff2') format('woff2'),
+         url('mgopenmodataregular-webfont.woff') format('woff'),
+         url('mgopenmodataregular-webfont.ttf') format('truetype'),
+         url('mgopenmodataregular-webfont.svg#mgopen_modataregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -261,6 +274,140 @@ header{
 
 /* section about us end */
 
+/* section our works */
+
+.our-works{
+  padding-top: 75px;
+}
+
+.our-works ul{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    letter-spacing: .1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #3d3d3d;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #3d3d3d;
+    background-color: transparent;
+}
+
+
+.nav-pills .nav-link, .nav-pills .show>.nav-link{
+  color: #3d3d3d;
+}
+
+.our-works-title{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-works .our-works-title h3{
+  margin-bottom: 15px;
+}
+
+.our-works .our-works-title .underline{
+  margin-bottom: 25px;
+}
+
+.our-works .our-works-title p{
+  margin-bottom: 85px;
+  width: 544px;
+  text-align: center;
+}
+
+.our-works .tab-content:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.our-works .our-works-item{
+  float: left;
+  display: inline-block;
+  width: 20%;
+}
+
+.our-works .our-works-item img{
+  width: 100%;
+  vertical-align: middle;
+}
+
+.our-works li .underline {
+ opacity: 0;
+ width: 112px;
+ height: 1px;
+}
+
+.our-works li{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.our-works li .active{
+  font-weight: 700;
+  opacity: 1;
+}
+
+/* section our works end */
+
+/* section choose-one-thing */
+
+.choose-one-thing{
+  padding: 100px 0;
+  background-color: #1c1c1c;
+}
+
+.choose-slide-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+ /*  margin: auto; */
+}
+
+.choose-options{
+  display: flex;
+  align-self: center; 
+}
+
+.choose-slide-1 .choose-options span{
+  font-family: 'mgopen_modataregular';
+  font-size: 33px;
+  color: #eadedd;
+  margin-left: 10px;
+}
+
+.choose-options span:hover{
+  color: #f26c4f;
+  text-decoration: none;
+  border-bottom: none; 
+}
+
+/* section choose-one-thing end*/
+
 /* section who-we */
 .who-we{
   display: -webkit-flex;
@@ -286,6 +433,23 @@ header{
   margin-bottom: 85px;
   width: 555px;
   text-align: center;
+}
+
+.persona-stats .skills-stats{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  color: #3d3d3d;
+}
+
+.persona-stats p{
+  width: 544px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #858383;
+  font-weight: 100;
+  margin-bottom: 45px;
+  margin-top: 22px;
 }
 
 
@@ -332,7 +496,32 @@ header{
   width: 135px;
   height: 135px;
   background-color: #fff;
-  background-color: #f26c4f;
+  /* background-color: #f26c4f; */
+  background-image: url('https://pngimg.com/uploads/steve_jobs/steve_jobs_PNG1.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.persona-data .persona-avatar2{
+  width: 135px;
+  height: 135px;
+  background-color: #fff;
+  /* background-color: #f26c4f; */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Elon_Musk_Royal_Society.jpg/266px-Elon_Musk_Royal_Society.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.persona-data .persona-avatar3{
+  width: 135px;
+  height: 135px;
+  background-color: #fff;
+  /* background-color: #f26c4f; */
+  background-image: url('https://kubnews.ru/upload/iblock/f22/f22cf51e017c75aa80b080363881f358.png');
+  -webkit-background-size: cover;
+  background-size: cover;
   border-radius: 50%;
 }
 
@@ -602,6 +791,10 @@ transition: all 0.5s;
 
 /* section chose plan end */
 
+ /* section GET IN TOUCH */
+
+ /* section GET IN TOUCH end */
+
 /* section locate */
 
 .locate{
@@ -688,6 +881,15 @@ justify-content: center;
   color: #e1d3d3;
 }
 
+.social-in-footer a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.social-in-footer a + a{
+  margin-left: 15px;
+}
+
 /* section info footer end */
 
-/* footer end */
+/* footer end
