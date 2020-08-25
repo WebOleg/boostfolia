@@ -27,12 +27,12 @@
 
 @font-face {
     font-family: 'mgopen_modataregular';
-    src: url('mgopenmodataregular-webfont.eot');
-    src: url('mgopenmodataregular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('mgopenmodataregular-webfont.woff2') format('woff2'),
-         url('mgopenmodataregular-webfont.woff') format('woff'),
-         url('mgopenmodataregular-webfont.ttf') format('truetype'),
-         url('mgopenmodataregular-webfont.svg#mgopen_modataregular') format('svg');
+    src: url('../fonts/mgopenmodataregular-webfont.eot');
+    src: url('../fonts/mgopenmodataregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mgopenmodataregular-webfont.woff2') format('woff2'),
+         url('../fonts/mgopenmodataregular-webfont.woff') format('woff'),
+         url('../fonts/mgopenmodataregular-webfont.ttf') format('truetype'),
+         url('../fonts/mgopenmodataregular-webfont.svg#mgopen_modataregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -280,26 +280,6 @@ header{
   padding-top: 75px;
 }
 
-.our-works ul{
-    display: flex;
-    justify-content: center;
-    font-size: 14px;
-    letter-spacing: .1em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: #3d3d3d;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #3d3d3d;
-    background-color: transparent;
-}
-
-
-.nav-pills .nav-link, .nav-pills .show>.nav-link{
-  color: #3d3d3d;
-}
-
 .our-works-title{
   display: -webkit-flex;
   display: -moz-flex;
@@ -318,16 +298,43 @@ header{
   margin-bottom: 15px;
 }
 
-.our-works .our-works-title .underline{
-  margin-bottom: 25px;
-}
-
 .our-works .our-works-title p{
+  margin-top: 25px;
   margin-bottom: 85px;
   width: 544px;
   text-align: center;
 }
 
+
+
+.our-works ul{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    letter-spacing: .1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #3d3d3d;
+}
+
+.our-works .nav-item + .nav-item{
+  margin-left: 10px;
+}
+
+.our-works .nav-link{
+  color: #3d3d3d;
+  text-transform: uppercase; 
+  border-radius: 0;
+  padding: 0 7px 8px 7px;
+}
+
+.our-works .nav-link.active{
+    color: #3d3d3d;
+    background-color: transparent;
+    border-bottom: 1px solid #e64e40;
+    font-weight: 700;
+}
+/* 
 .our-works .tab-content:after{
   content: '';
   display: block;
@@ -338,66 +345,77 @@ header{
   float: left;
   display: inline-block;
   width: 20%;
+} */
+
+.our-works .tab-content .tab-pane .row{
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.our-works .our-works-item{
+  width: 20%;
 }
 
 .our-works .our-works-item img{
   width: 100%;
-  vertical-align: middle;
 }
 
-.our-works li .underline {
- opacity: 0;
- width: 112px;
- height: 1px;
-}
-
-.our-works li{
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
-  flex-direction: column;
-  -ms-align-items: center;
-  align-items: center;
-}
-
-.our-works li .active{
-  font-weight: 700;
-  opacity: 1;
-}
 
 /* section our works end */
 
 /* section choose-one-thing */
 
 .choose-one-thing{
-  padding: 100px 0;
   background-color: #1c1c1c;
 }
 
-.choose-slide-1{
+#carousel-choose-one-thing{
+  height: 240px;
+  display: flex;
+  justify-content: center;
+}
+
+#carousel-choose-one-thing .carousel-inner{
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.choose-slide{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
- /*  margin: auto; */
+
 }
 
+.choose-one-thing .carousel-control-prev, .choose-one-thing .carousel-control-next{
+  height: 100%;
+}
 .choose-options{
   display: flex;
-  align-self: center; 
 }
 
-.choose-slide-1 .choose-options span{
+.choose-options:hover{
+  text-decoration: none;
+}
+
+.choose-slide .choose-options img{
+  position: absolute;
+}
+
+.choose-slide .choose-options.river img{
+  position: absolute;
+  transform: translateX(-10px);
+}
+
+.choose-slide .choose-options span{
   font-family: 'mgopen_modataregular';
   font-size: 33px;
   color: #eadedd;
-  margin-left: 10px;
+  margin-left: 60px;
+
 }
 
 .choose-options span:hover{
