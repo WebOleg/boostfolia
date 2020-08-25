@@ -44,6 +44,10 @@
   box-sizing: border-box
 }
 
+a:hover{
+  cursor: pointer;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -82,13 +86,24 @@ body{
 /* header */
 
 header{
-  display: none;
   padding: 50px 0;
   position: fixed;
   z-index: 99;
   background-color: #f8f6f6;
   left: 0;
   right: 0;
+  transition: all .5s;
+}
+
+header.scrolled{
+  padding: 10px 0;
+  border-bottom: 2px solid #f4511e;
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .logo h1{
@@ -108,6 +123,40 @@ header{
   align-items: center;
 }
 
+nav.navbar{
+  position: static;
+}
+
+.navbar-light .navbar-toggler, .navbar-light .navbar-toggler:focus{
+  border: none;
+  outline: none;
+}
+
+.navbar-collapse{
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f8f6f6;
+  font-family: 'bignoodletitlingregular';
+  font-size: 30px;
+  letter-spacing: .1em; 
+
+}
+
+.navbar-collapse ul{
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar-collapse ul li + li{
+  margin-left: 35px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #f4511e;
+}
 /* header end
 
 /* main */
@@ -116,7 +165,7 @@ header{
 
 .inner{
   height: 100vh;
-  padding-top: 146.6px;
+  padding-top: 145px;
 }
 
 #carousel-block{
@@ -276,7 +325,7 @@ header{
 
 /* section our works */
 
-.our-works{
+section.our-works{
   padding-top: 75px;
 }
 
@@ -367,7 +416,7 @@ header{
 
 /* section choose-one-thing */
 
-.choose-one-thing{
+section.choose-one-thing{
   background-color: #1c1c1c;
 }
 
@@ -427,7 +476,7 @@ header{
 /* section choose-one-thing end*/
 
 /* section who-we */
-.who-we{
+section.who-we{
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -641,7 +690,7 @@ header{
 
 /* section-SOME FEATURES */
 
-.some-features{
+section.some-features{
   padding: 60px 0;
   background-color: #171f23;  
 }
@@ -697,7 +746,7 @@ header{
 
  /* section chose plan */
 
-.chose-plan{
+section.chose-plan{
 padding-top: 60px;
 padding-bottom: 90px;
 background-color: #171f23;
@@ -815,22 +864,22 @@ transition: all 0.5s;
 
 /* section locate */
 
-.locate{
-padding: 30px 0;
+section.locate{
 background-color: #0c1215;
 }
 
 .locate .locate-on-map{
+  padding: 30px 0;
+  color: #ffffff;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  /* -ms-align-items: center;
+  align-items: center; */
+  justify-content: center;
 
-color: #ffffff;
-display: -webkit-flex;
-display: -moz-flex;
-display: -ms-flex;
-display: -o-flex;
-display: flex;
-/* -ms-align-items: center;
-align-items: center; */
-justify-content: center;
 }
 
 .locate .locate-on-map span{
@@ -852,6 +901,15 @@ justify-content: center;
   color: #f6744b;
 }
 
+#map-collides{
+  height: 0;
+  transition: all .3s;
+}
+
+#map-collides.shown{
+  height: 650px;
+}
+
  /* section locate end */
 
 /* main end
@@ -860,7 +918,7 @@ justify-content: center;
 
 /* section info-footer */
 
-.info-footer{
+section.info-footer{
   padding: 50px 0;
   background-color: #171f23;
 }
