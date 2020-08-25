@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -29,9 +29,25 @@
         <a href="index.html"><img src="img/logo.png" alt=""></a>
         <h1>BOOSTFOLIA</h1>
       </div>
-      <div class="menu">
-        
-      </div>
+      <nav class="navbar navbar-expand-fluid navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link about" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link our-works" href="#">Our Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link who-we" href="#">Who we are</a>
+            </li>
+          </ul>
+          
+        </div>
+      </nav>
     </div> 
        
     </header>
@@ -41,7 +57,7 @@
     <main>
       <!-- section inner
        -->
-      <section class="inner">
+      <section class="inner" id="inner">
         <div id="carousel-block" class="carousel slide carousel-fade" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -77,7 +93,7 @@
       <!-- section inner end -->
 
       <!-- section-about us -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-us text-center">
           <div class="container">
             <h1 class="standard-title">ABOUT US</h1>
@@ -122,7 +138,7 @@
 
       <!-- section our works -->
 
-      <section class="our-works">
+      <section class="our-works" id="our-works">
         <div class="our-works-title">
           <h3 class="standard-title">OUR WORKS</h3>
           <div class="underline"></div>
@@ -131,131 +147,136 @@
 
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#all-works" role="tab" aria-controls="pills-home" aria-selected="true">all works</a>
-            <div class="underline"></div>
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#all-works" role="tab" aria-controls="pills-home" aria-selected="true">all projects</a>
           </li>
           <li class="nav-item" role="presentation">
             <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#photography" role="tab" aria-controls="pills-profile" aria-selected="false">photography</a>
-            <div class="underline"></div>
           </li>
           <li class="nav-item" role="presentation">
             <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#web-design" role="tab" aria-controls="pills-contact" aria-selected="false">web design</a>
-            <div class="underline"></div>
           </li>
           <li class="nav-item" role="presentation">
             <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#branding" role="tab" aria-controls="pills-contact" aria-selected="false">branding</a>
-            <div class="underline"></div>
           </li>
           <li class="nav-item" role="presentation">
             <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#mobile-app" role="tab" aria-controls="pills-contact" aria-selected="false">mobile app</a>
-            <div class="underline"></div>
           </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
 
           <div class="tab-pane fade show active" id="all-works" role="tabpanel" aria-labelledby="pills-home-tab">
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
+            <div class="row">
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works2.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works2.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works2.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works2.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works2.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works2.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works2.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+            </div>
 
           
 
          </div>
 
           <div class="tab-pane fade" id="photography" role="tabpanel" aria-labelledby="pills-profile-tab">
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
+            <div class="row">
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works2.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+            </div>
             
             
           </div>
             
           <div class="tab-pane fade" id="web-design" role="tabpanel" aria-labelledby="pills-contact-tab">
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
+            <div class="row">
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+            </div>
             
           </div>
 
           <div class="tab-pane fade" id="branding" role="tabpanel" aria-labelledby="pills-contact-tab">
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
+            <div class="row">
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works2.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works2.png" alt="">
+              </a>
+            </div>
           </div>
 
           <div class="tab-pane fade" id="mobile-app" role="tabpanel" aria-labelledby="pills-contact-tab">
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
-            <a href="#" class="our-works-item">
-              <img src="img/our works.png" alt="">
-            </a>
+            <div class="row">
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works2.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works2.png" alt="">
+              </a>
+              <a href="#" class="our-works-item">
+                <img src="img/our works.png" alt="">
+              </a>
+            </div>
           </div>
 
         </div>
@@ -266,81 +287,83 @@
 
       <!-- section choose-one-thing -->
 
-      <section class="choose-one-thing">
-       <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-interval="10000">
-            <div class="container">
-              <div class="choose-slide-1">
-                <a class="choose-options">
-                  <img src="img/themeforest.png">
-                  <span>themeforest</span>
-                </a>
-                <a class="choose-options">
-                  <img src="img/graphicriver.png">
-                  <span>graphicriver</span>
-                </a>
-                <a class="choose-options">
-                  <img src="img/videohive.png">
-                  <span>videohive</span>
-                </a>
-              </div>   
+      <section class="choose-one-thing" id="choose-one-thing">
+        <div class="container">
+          <div id="carousel-choose-one-thing" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="choose-slide">
+                    <a class="choose-options">
+                      <img src="img/themeforest.png">
+                      <span>themeforest</span>
+                    </a>
+                    <a class="choose-options river">
+                      <img src="img/graphicriver.png">
+                      <span>graphicriver</span>
+                    </a>
+                    <a class="choose-options">
+                      <img src="img/videohive.png">
+                      <span>videohive</span>
+                    </a>
+                  </div>   
+                </div>
+               
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="choose-slide">
+                    <a class="choose-options">
+                      <img src="img/videohive.png">
+                      <span>videohive</span>
+                    </a>
+                    <a class="choose-options">
+                      <img src="img/themeforest.png">
+                      <span>themeforest</span>
+                    </a>
+                    <a class="choose-options river">
+                      <img src="img/graphicriver.png">
+                      <span>graphicriver</span>
+                    </a>
+                  </div>   
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="choose-slide">
+                    <a class="choose-options river">
+                      <img src="img/graphicriver.png">
+                      <span>graphicriver</span>
+                    </a>
+                    <a class="choose-options">
+                      <img src="img/videohive.png">
+                      <span>videohive</span>
+                    </a>
+                    <a class="choose-options">
+                      <img src="img/themeforest.png">
+                      <span>themeforest</span>
+                    </a>
+                  </div>   
+                </div>
+              </div>
             </div>
-           
-          </div>
-          <div class="carousel-item" data-interval="2000">
-            <div class="container">
-              <div class="choose-slide-1">
-                <a class="choose-options">
-                  <img src="img/themeforest.png">
-                  <span>themeforest</span>
-                </a>
-                <a class="choose-options">
-                  <img src="img/graphicriver.png">
-                  <span>graphicriver</span>
-                </a>
-                <a class="choose-options">
-                  <img src="img/videohive.png">
-                  <span>videohive</span>
-                </a>
-              </div>   
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="choose-slide-1">
-                <a class="choose-options">
-                  <img src="img/themeforest.png">
-                  <span>themeforest</span>
-                </a>
-                <a class="choose-options">
-                  <img src="img/graphicriver.png">
-                  <span>graphicriver</span>
-                </a>
-                <a class="choose-options">
-                  <img src="img/videohive.png">
-                  <span>videohive</span>
-                </a>
-              </div>   
-            </div>
+            <a class="carousel-control-prev" href="#carousel-choose-one-thing" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-choose-one-thing" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
       </section>
 
       <!-- section choose-one-thing end -->
 
       <!-- section who-we -->
 
-      <section class="who-we">
+      <section class="who-we" id="who-we">
         <h2 class="standard-title">WHO WE ARE?</h2>
         <div class="underline"></div>
         <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum consequatur id, esse minus odit unde quas facere, impedit, quod doloribus ipsa nobis inventore ipsam modi voluptatibus mollitia ullam! Consequatur, qui.</p>
@@ -538,7 +561,7 @@
 
       <!-- section-SOME FEATURES -->
 
-      <section class="some-features">
+      <section class="some-features" id="some-features">
         <div class="fuatures text-center">
            <h2 class="title">SOME FEATURES</h2>
           <div class="line"></div>
@@ -568,72 +591,72 @@
 
      <!-- section chose plan -->
 
-     <section class="chose-plan text-center">
-      <h3 class="title">CHOSE PLAN</h3>
-      <div class="line"></div>
-      <div class="container">
-        <!-- <h3>CHOSE PLAN</h3>
-        <div class="line"></div> -->
-        <div class="card-plan">
-          <div class="card-plan-top">
-            <span class>BASIC</span>
-            <span class="price">Free</span>
+      <section class="chose-plan text-center" id="chose-plan">
+        <h3 class="title">CHOSE PLAN</h3>
+        <div class="line"></div>
+        <div class="container">
+          <!-- <h3>CHOSE PLAN</h3>
+          <div class="line"></div> -->
+          <div class="card-plan">
+            <div class="card-plan-top">
+              <span class>BASIC</span>
+              <span class="price">Free</span>
+            </div>
+            <div class="card-plan-bottom">
+              <span><span class="number">20</span>Pages</span>
+              <span><span class="number">2</span>GB Storage</span>
+              <span><span class="number">150</span>Members</span>
+              <span><span class="number">2</span>Contributors</span>
+              <a href="#" class="btn">PURCHASE</a>
+            </div>
           </div>
-          <div class="card-plan-bottom">
-            <span><span class="number">20</span>Pages</span>
-            <span><span class="number">2</span>GB Storage</span>
-            <span><span class="number">150</span>Members</span>
-            <span><span class="number">2</span>Contributors</span>
-            <a href="#" class="btn">PURCHASE</a>
+           <div class="card-plan">
+            <div class="card-plan-top">
+              <span class>STANDART</span>
+              <span class="price">$24.00</span>
+            </div>
+            <div class="card-plan-bottom">
+              <span><span class="number">25</span>Pages</span>
+              <span><span class="number">10</span>GB Storage</span>
+              <span><span class="number">300</span>Members</span>
+              <span><span class="number">5</span>Contributors</span>
+              <a href="#" class="btn">PURCHASE</a>
+            </div>
+          </div>
+           <div class="card-plan">
+            <div class="card-plan-top">
+              <span class>PREMIUM</span>
+              <span class="price">$40.00</span>
+            </div>
+            <div class="card-plan-bottom">
+             <span><span class="number">30</span>Pages</span>
+              <span><span class="number">20</span>GB Storage</span>
+              <span><span class="number">500</span>Members</span>
+              <span><span class="number">10</span>Contributors</span>
+              <a href="#" class="btn">PURCHASE</a>
+            </div>
+          </div>
+           <div class="card-plan">
+            <div class="card-plan-top">
+              <span class>PROFESSIONAL</span>
+              <span class="price">$75.00</span>
+            </div>
+            <div class="card-plan-bottom">
+              <span><span class="number">40</span>Pages</span>
+              <span><span class="number">40</span>GB Storage</span>
+              <span><span class="number">1000</span>Members</span>
+              <span><span class="number">20</span>Contributors</span>
+              <a href="#" class="btn">PURCHASE</a>
+            </div>
           </div>
         </div>
-         <div class="card-plan">
-          <div class="card-plan-top">
-            <span class>STANDART</span>
-            <span class="price">$24.00</span>
-          </div>
-          <div class="card-plan-bottom">
-            <span><span class="number">25</span>Pages</span>
-            <span><span class="number">10</span>GB Storage</span>
-            <span><span class="number">300</span>Members</span>
-            <span><span class="number">5</span>Contributors</span>
-            <a href="#" class="btn">PURCHASE</a>
-          </div>
-        </div>
-         <div class="card-plan">
-          <div class="card-plan-top">
-            <span class>PREMIUM</span>
-            <span class="price">$40.00</span>
-          </div>
-          <div class="card-plan-bottom">
-           <span><span class="number">30</span>Pages</span>
-            <span><span class="number">20</span>GB Storage</span>
-            <span><span class="number">500</span>Members</span>
-            <span><span class="number">10</span>Contributors</span>
-            <a href="#" class="btn">PURCHASE</a>
-          </div>
-        </div>
-         <div class="card-plan">
-          <div class="card-plan-top">
-            <span class>PROFESSIONAL</span>
-            <span class="price">$75.00</span>
-          </div>
-          <div class="card-plan-bottom">
-            <span><span class="number">40</span>Pages</span>
-            <span><span class="number">40</span>GB Storage</span>
-            <span><span class="number">1000</span>Members</span>
-            <span><span class="number">20</span>Contributors</span>
-            <a href="#" class="btn">PURCHASE</a>
-          </div>
-        </div>
-      </div>
 
-     </section>
+      </section>
 
      <!-- section chose plan end -->
 
      <!-- section GET IN TOUCH -->
-     <section class="get-in-touch">
+     <section class="get-in-touch" id="get-in-touch">
        
      </section>
 
@@ -641,13 +664,13 @@
 
      <!-- section locate -->
 
-     <section class="locate">
-          <a href="" class="locate-on-map">
+     <section class="locate" id="locate">
+          <a class="locate-on-map">
             <span>LOCATE ON MAP</span>
             <i class="pe-7s-angle-down"></i>
           </a>
-          <div class="map-collides">
-            <!-- тута карта -->
+          <div id="map-collides">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169069.14148496388!2d34.470585615824774!3d48.538878479961525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbda360ea4dfed%3A0xd0e3b9284b2885f8!2z0JrQsNC84oCZ0Y_QvdGB0YzQutC1LCDQlNC90ZbQv9GA0L7Qv9C10YLRgNC-0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNTE5MDA!5e0!3m2!1suk!2sua!4v1598362817331!5m2!1suk!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
     </section>
 
@@ -686,8 +709,10 @@
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="js/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
