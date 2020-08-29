@@ -323,6 +323,70 @@ nav.navbar{
 
 /* section about us end */
 
+/* section WATCH BEHIND THE SCENE */
+
+.watch-behind-the-scene{
+  width: 100%;
+  height: 434px;
+  background-color: #171f23;
+  display: flex;
+}
+
+.watch-behind-article{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+
+.watch-behind-article span{
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #e7e7e7;
+  margin-bottom: 30px;
+}
+
+.watch-behind-article p{
+  width: 490px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.watch-behind-article .btn{
+  background-color: #e84c3d;
+  border-radius: 0;
+  /* padding: 15px 27px; */
+  color: #ebebeb;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  border-bottom: 2px solid;
+  border-color: #b11000;
+  outline: none;   
+}
+
+.watch-behind-article a:hover{
+  background-color: #171f23;
+  color: #e84c3d;
+  border-color: #e84c3d;
+}
+
+.watch-behind-video{
+  width: 50%;
+}
+
+.watch-behind-video img{
+  width: 100%;
+  height: 434px;
+}
+/* section WATCH BEHIND THE SCENE END */
+
 /* section our works */
 
 section.our-works{
@@ -742,6 +806,73 @@ section.some-features{
 
 
 /* section-SOME FEATURES end */
+
+/* section blog posts */
+
+.blog-posts{
+  padding-top: 75px;
+  padding-bottom: 110px;
+}
+
+.blog-posts .blog-posts-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-posts .underline{
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.blog-posts p{
+  width: 551px;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.card-img img{
+  width: 100%;
+}
+
+.blog-posts .card-article{
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+}
+
+.blog-posts .card-article span{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: .1em;
+  color: #505050;
+  margin-top: 35px;
+}
+
+.blog-posts .card-article p{
+  width: 260px;
+  text-align: start;
+  margin-top: 30px;
+}
+
+#blog-posts > div.container > div > div > div:nth-child(1) > div.card-article > div > i > span{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.data{
+  margin-bottom: 27px;
+}
+
+.blog-posts .like{
+  margin-left: 113px;
+}
+
+
+/* section blog posts end */
 
 
  /* section chose plan */
