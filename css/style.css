@@ -39,6 +39,23 @@
 }
 
 /* fonts end */
+span.green-bg{
+  position: relative;
+  z-index: 1;
+}
+
+span.green-bg::before{
+  position: absolute;
+  background-color: green;
+  content: '';
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+  top: 50%;
+
+}
+
 
 *{
   box-sizing: border-box
