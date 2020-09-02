@@ -397,6 +397,7 @@ section.watch-behind-the-scene{
   top: 50%;
   transform: translate(-50%, -50%);
   transition: all 1s;
+  filter: drop-shadow(0px 0px 4px #e84c3d);
 }
 
 .watch-behind-video i:hover{
@@ -1074,7 +1075,7 @@ transition: all 0.5s;
 
  /* section GET IN TOUCH */
 
- .get-in-touch{
+ section.get-in-touch{
   padding-top: 60px;
   padding-bottom: 80px;
  }
@@ -1155,6 +1156,12 @@ transition: all 0.5s;
   letter-spacing: .1em;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+}
+
+.get-in-touch input:focus, .get-in-touch textarea:focus{
+  /* box-shadow: 0 0 0 0.05rem rgba(243, 114, 77, 1); */
+  box-shadow: none;
+  border-color: #f3724d;
 }
 
  /* section GET IN TOUCH end */
