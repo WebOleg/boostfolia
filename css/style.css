@@ -1074,6 +1074,89 @@ transition: all 0.5s;
 
  /* section GET IN TOUCH */
 
+ .get-in-touch{
+  padding-top: 60px;
+  padding-bottom: 80px;
+ }
+
+ .get-in-touch-top-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .get-in-touch .get-in-touch-top-section .underline{
+  margin-top: 7px;
+ }
+
+ .get-in-touch .get-in-touch-top-section p{
+  margin-top: 25px;
+  width: 560px;
+  text-align: center;
+  margin-bottom: 85px;
+ }
+
+ .get-in-touch-email-name{
+  display: flex;
+  width: 100%;
+ }
+
+ .get-in-touch .get-in-touch-bottom-section .get-in-touch-email-name .name{
+    width: 50%;
+    font-size: 14px;
+    letter-spacing: .1em;
+    color: #696969;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+ }
+
+ .get-in-touch .get-in-touch-bottom-section .get-in-touch-email-name .mail{
+    width: 50%;
+    font-size: 14px;
+    letter-spacing: .1em;
+    color: #696969;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+ }
+
+.get-in-touch .get-in-touch-bottom-section .get-in-touch-email-name .name + .mail{
+  margin-left: 30px;
+ }
+
+.get-in-touch .get-in-touch-bottom-section .messege{
+  font-size: 14px;
+  letter-spacing: .1em;
+  color: #696969;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-top: 44px;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 0;
+  border-color: #cacaca;
+}
+
+.get-in-touch .get-in-touch-bottom-section .get-in-touch-b-s-span{
+  color:#f3724d;
+}
+
+.get-in-touch .get-in-touch-bottom-section .get-in-touch-button{
+  text-align: center;
+  margin-top: 60px;
+}
+
+.get-in-touch .get-in-touch-bottom-section .get-in-touch-button .btn{
+  background-color: #f3724d;
+  border-color: #f3724d;
+  font-size: 14px;
+  letter-spacing: .1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
  /* section GET IN TOUCH end */
 
 /* section locate */
